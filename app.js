@@ -156,8 +156,8 @@ uncomment the call for the testMultiplyAnyArray() function and see if the test p
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-  var x = multiply(dynamicArray[0], dynamicArray[1])[0];
-  for(var i = 2; i < dynamicArray.length; i++) {
+  var x = dynamicArray[0];
+  for(var i = 1; i < dynamicArray.length; i++) {
     x = multiply(x, dynamicArray[i])[0];
   }
   var list = dynamicArray[0] + ',';
